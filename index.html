@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diseño y Desarrollo Web</title>
+
+  <!-- CSS Personalizado -->
+  <link rel="stylesheet" href="css/estilos.css">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-light text-dark">
+  
+  <script>
+  let nombre = prompt("Ingresá tu nombre:");
+  let apellido = prompt("Ingresá tu apellido:");
+  let fechaNacimiento = prompt("Ingresá tu fecha de nacimiento (AAAA-MM-DD):");
+
+  alert("¡Bienvenido/a " + nombre + " " + apellido + "!");
+
+  // Paso 3: Calcular días vividos
+  let nacimiento = new Date(fechaNacimiento);
+  let hoy = new Date();
+  let diferencia = hoy - nacimiento;
+  let diasVividos = Math.floor(diferencia / (1000 * 60 * 60 * 24));
+
+  alert("Has vivido aproximadamente " + diasVividos + " días.");
+</script>
+
+  <!-- Header con navegación -->
+  <header class="bg-primary text-white p-3">
+    <nav class="nav justify-content-center">
+      <a href="home.html" class="nav-link text-white">Home</a>
+      <a href="index.html" class="nav-link text-white">Diseño y Desarrollo Web</a>
+      <a href="avisos.html" class="nav-link text-white">Avisos</a>
+      <a href="materias2025.html" class="nav-link text-white">Materias 2025</a>
+      <a href="sobre-mi.html" class="nav-link text-white">Sobre mí</a>
+      <a href="contacto.html" class="nav-link text-white">Contacto</a>
+    </nav>
+  </header>
+
+  <!-- Contenido principal -->
+  <main class="container py-4">
+    <h1 class="text-center mb-5">Diseño y Desarrollo Web</h1>
+
+    <div class="row mb-4">
+      <!-- Fechas de exámenes -->
+      <div class="col-md-4 mb-3">
+        <div class="card h-100">
+          <div class="card-header bg-secondary text-white">
+            Fechas de exámenes
+          </div>
+          <div class="card-body">
+            <ul>
+              <li>Parcial 1: 15/05/2025</li>
+              <li>Parcial 2: 13/06/2025</li>
+              <li>Final: 14/07/2025</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Actividades UVAs -->
+      <div class="col-md-8 mb-3">
+        <div class="card h-100">
+          <div class="card-header bg-secondary text-white">
+            Actividades UVAs
+          </div>
+          <div class="card-body">
+            <ul>
+              <li><a href="https://virtualbsp.uade.edu.ar/d2l/le/content/43569/Home?itemIdentifier=D2L.LE.Content.ContentObject.ModuleCO-557745" target="_blank">UVA 1: Introducción al desarrollo web</a></li>
+              <li><a href="https://virtualbsp.uade.edu.ar/d2l/le/content/43569/Home?itemIdentifier=D2L.LE.Content.ContentObject.ModuleCO-557746" target="_blank">UVA 2: Diseño de interfaz y Experiencia de Usuario</a></li>
+              <li>UVA 3: Formulario de Contacto</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mb-4">
+      <!-- Bibliografía -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <div class="card-header bg-secondary text-white">
+            Bibliografía
+          </div>
+          <div class="card-body">
+            <ul>
+              <li>HTML 5</li>
+              <li>Bootstrap</li>
+              <li>CSS</li>
+              <li>Twind</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Información del curso -->
+    <div class="text-center mt-5">
+      <p>Curso: 12345 / Profesora: Patricia Litovicius</p>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-primary text-white text-center py-3 mt-5">
+    <p>&copy; 2025 Mi Sitio de Cursada UADE</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Mi Cursada 2025</title>
+
+  <!-- Vinculamos hoja de estilos personalizada -->
+  <link rel="stylesheet" href="estilos.css">
+
+  <!-- Vinculamos Bootstrap para usar utilidades de diseño y componentes -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light text-dark"> <!-- Fondo blanco y texto oscuro -->
+
+  <!-- Header con barra de navegación centrada -->
+  <header class="bg-primary text-white p-3">
+    <nav class="nav justify-content-center"> <!-- justify-content-center centra los links -->
+      <a href="home.html" class="nav-link text-white">Home</a>
+      <a href="index.html" class="nav-link text-white">Diseño y Desarrollo Web</a>
+      <a href="avisos.html" class="nav-link text-white">Avisos</a>
+      <a href="materias2025.html" class="nav-link text-white">Materias 2025</a>
+      <a href="sobre-mi.html" class="nav-link text-white">Sobre mí</a>
+      <a href="contacto.html" class="nav-link text-white">Contacto</a>
+      
+    </nav>
+  </header>
+
+  <!-- Contenido principal -->
+  <main class="container py-4">
+    <h1 class="mb-4 text-center">Materias del Cuatrimestre</h1> <!-- Título centrado -->
+
+    <!-- Tabla de materias usando clases Bootstrap para bordes y rayado -->
+    <div class="table-responsive p-3">
+      <table class="table table-bordered table-striped text-center">
+        <thead class="table-primary"> <!-- Encabezado de tabla en color azul Bootstrap -->
+          <tr>
+            <th>Materia</th>
+            <th>Día y Horario</th>
+            <th>Modalidad</th>
+            
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Arquitectura de computadores</td>
+            <td>Lunes 18:30 - 20:00</td>
+            <td>Virtual</td>
+          </tr>
+          <tr>
+            <td>Sistemas de informacion 1</td>
+            <td>Martes 18:30 - 20:00</td>
+            <td>Virtual</td>
+          </tr>
+          <tr>
+            <td>Fundamentos de la informatica</td>
+            <td>Miércoles 18:30 - 20:00</td>
+            <td>Virtual</td>
+          </tr>
+          <tr>
+            <td>Marketing</td>
+            <td>Jueves 18:30 - 20:00</td>
+            <td>Virtual</td>
+          </tr>
+          <tr>
+            <td>Diseño y Desarrollo Web</td>
+            <td>Viernes 18:30 - 20:00</td>
+            <td>Virtual</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </main>
+
+  <!-- Footer final con fondo azul Bootstrap -->
+  <footer class="bg-primary text-white text-center py-3 mt-5">
+    <p>&copy; 2025 Mi Sitio de Cursada UADE by joaquin rodriguez</p>
+  </footer>
+
+  <!-- JavaScript de Bootstrap para funcionalidades como collapses o dropdowns -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
