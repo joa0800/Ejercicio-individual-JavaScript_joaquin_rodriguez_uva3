@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto</title>
+
+  <!-- CSS Personalizado -->
+  <link rel="stylesheet" href="css/estilos.css">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light text-dark">
+
+  <!-- Menú de navegación -->
+  <header class="bg-primary text-white p-3">
+    <nav class="nav justify-content-center">
+      <a href="home.html" class="nav-link text-white">Home</a>
+      <a href="index.html" class="nav-link text-white">Diseño y Desarrollo Web</a>
+      <a href="avisos.html" class="nav-link text-white">Avisos</a>
+      <a href="materias2025.html" class="nav-link text-white">Materias 2025</a>
+      <a href="sobre-mi.html" class="nav-link text-white">Sobre mí</a>
+      <a href="contacto.html" class="nav-link text-white">Contacto</a>
+    </nav>
+  </header>
+
+  <!-- Contenido principal -->
+  <main class="container py-4">
+    <h1 class="mb-4 text-center">Formulario de Contacto</h1>
+
+    <!-- Formulario -->
+    <div class="bloque-verde p-4">
+      <form>
+        <div class="mb-3">
+          <label for="nombre" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="nombre" placeholder="Tu nombre">
+          <!-- form-control de Bootstrap para campos de formulario estilizados -->
+        </div>
+
+        <div class="mb-3">
+          <label for="email" class="form-label">Correo Electrónico</label>
+          <input type="email" class="form-control" id="email" placeholder="tucorreo@ejemplo.com">
+        </div>
+
+        <div class="mb-3">
+          <label for="asunto" class="form-label">Asunto</label>
+          <input type="text" class="form-control" id="asunto" placeholder="Motivo del mensaje">
+        </div>
+
+        <div class="mb-3">
+          <label for="mensaje" class="form-label">Mensaje</label>
+          <textarea class="form-control" id="mensaje" rows="5" placeholder="Escribe tu mensaje aquí"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-light">Enviar</button>
+        <!-- btn-light para que sea botón claro-->
+      </form>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-primary text-white text-center py-3 mt-5">
+    <p>&copy; 2025 Mi Sitio de Cursada UADE</p>
+  </footer>
+
+  <!-- Bootstrap JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
